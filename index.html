@@ -14,6 +14,24 @@
         <ul class="site-navigation">
           <li class="site-navigation__item">
               <a href="#">Каталог</a>
+              <ul>
+                <li>
+                  <a href="#" class="item__active">Новинки</a>
+                  <hr>
+                </li>
+                <li>
+                  <a href="#" class="item__inactive">Сливочное</a>
+                </li>
+                <li>
+                  <a href="#" class="item__inactive">Щербеты</a>
+                </li>
+                <li>
+                  <a href="#" class="item__inactive">Фруктовый лёд</a>
+                </li>
+                <li>
+                  <a href="#" class="item__inactive">Мелорин</a>
+                </li>
+              </ul>
           </li>
           <li class="site-navigation__item">
               <a href="#">Доставка и оплата</a>
@@ -26,12 +44,41 @@
       <div class="service">
         <div class="service__search">
           Иконка
+          <input type="text" placeholder="Крем-брюле" class="search__field">
         </div>
         <div class="service__entrance">
           Вход
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <input type="email" placeholder="email@example.com">
+            <input type="password" placeholder=".......">
+            <button type="submit">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </form>
         </div>
         <div class="service__basket">
           Пусто
+          <div class="basket__line-1">
+            <span>X</span>
+            <img src="#" alt="">
+            <div class="basket__ic">Пломбир с апельсиновым джемом</div>
+            <span class="basket__weight">1,5 кг х</span>
+            <span class="basket__price">200 руб.</span>
+            <span class="basket__amount">300 руб.</span>
+          </div>
+          <div class="basket__line-2">
+            <span>X</span>
+            <img src="#" alt="">
+            <div class="basket__ic">Клубничный пломбир с присыпкой из белого шоколада</div>
+            <span class="basket__weight">1,5 кг х</span>
+            <span class="basket__price">300 руб.</span>
+            <span class="basket__amount">450 руб.</span>
+          </div>
+          <hr>
+          <div class="basket__amount">
+            Итого 750 руб.
+          </div>
+          <button type="submit" class="basket__order">Оформить заказ</button>
         </div>
         <div class="service__contacts">
           <div class="contacts__working-hours">
@@ -50,7 +97,7 @@
           Крем-брюле и пломбир с малиновым джемом
         </div>
         <div class="slider__button">
-          <button type="submit">Давайте оба!</button>
+          <a href="#">Давайте оба!</a>
         </div>
       </div>
       <div class="extras">
@@ -211,6 +258,17 @@
       </div>
 
     </footer>
+
+    <div class="ask-us">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <h3>Мы обязательно вам ответим!</h3>
+        <span class="ask-us__close">X</span>
+        <input type="text" placeholder="Имя Фамилия" class="ask-us__name" name="name">
+        <input type="email" placeholder="email@example.com" class="ask-us__email" name="email">
+        <textarea placeholder="В свободной форме" name="message" class="ask-us__message"></textarea>
+        <button type="submit" class="ask-us__submit">Отправить</button>
+      </form>
+    </div>
 
   </body>
 </html>

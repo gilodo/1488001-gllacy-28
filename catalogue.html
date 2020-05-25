@@ -8,7 +8,9 @@
 
     <header class="page-header">
       <div class="logo">
-        <img src="./img/logo.png" alt="Логотип">
+        <a href="/">
+          <img src="./img/logo.png" alt="Логотип">
+        </a>
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -29,17 +31,19 @@
     <main>
 
       <section class="search">
-        <div class="breadcrumbs">
+        <ul class="breadcrumbs">
             <div class="breadcrumbs__main">
-                Главная >>
+              <a href="#">Главная</a>
+                >>
             </div>
             <div class="breadcrumbs__catalogue">
-                Каталог >>
+              <a href="#">Каталог</a>
+                >>
             </div>
             <div class="breadcrumbs__creamy">
-                Сливочное
+              <a href="#">Сливочное</a>
             </div>
-        </div>
+        </ul>
         <h2>Сливочное мороженое</h2>
         <form action="https://echo.htmlacademy.ru" method="GET" class="form__search">
             <label for="sorting">Сортировка</label>
